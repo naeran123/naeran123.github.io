@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="국민의힘 탄핵안 불참자 리스트">
+    <meta property="og:description" content="2024년 12월 7일 국민의힘 탄핵안 불참자 리스트">
+    <meta property="og:image" content="https://www.assembly.go.kr/static/portal/img/img_assemblyCi_02.gif">
+    <meta property="og:url" content="https://neran24.info">
+    <title>국민의힘 탄핵안 불참자 리스트</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+    <header class="bg-black text-white py-2">
+        <div class="container">
+            <h2 class="mb-0">역사는 기억한다 │ <a href="/list/1207.html" class="text-white text-decoration-none">12.07</a></h2>
+        </div>
+    </header>
+    <div class="bg-dark text-white py-5 mb-3">
+        <div class="container">
+            <h1 class="display-4 text-center">2024년 12월 7일<br>국민의힘 탄핵안<br>불참자 리스트</h1>
+        </div>
+    </div>
+    <div class="container search-container">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" id="nameSearch" class="form-control" placeholder="이름으로 검색">
+            </div>
+            <div class="col-md-4">
+                <select id="regionSelect" class="form-control">
+                    <option value="">지역 선택</option>
+                    <option value="강원">강원</option>
+                    <option value="경기">경기</option>
+                    <option value="경남">경남</option>
+                    <option value="경북">경북</option>
+                    <option value="대구">대구</option>
+                    <option value="부산">부산</option>
+                    <option value="비례대표">비례대표</option>
+                    <option value="서울">서울</option>
+                    <option value="울산">울산</option>
+                    <option value="인천">인천</option>
+                    <option value="충남">충남</option>
+                    <option value="충북">충북</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input type="text" id="districtSearch" class="form-control" placeholder="지역구로 검색">
+            </div>
+        </div>
+    </div>    
+    <div class="container">
+        <div id="cardContainer" class="row row-cols-2 row-cols-md-4 g-2"></div>
+    </div>
+
+    <!-- 팝업 모달 -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="row">
+                <div class="col-md-5">
+                    <img id="modalImage" src="" alt="" class="modal-image">
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-3">
+                            <p class="fw-bold">이름</p>
+                        </div>
+                        <div class="col-9">
+                            <p id="modalName"></p>
+                        </div>
+                        <div class="col-3">
+                            <p class="fw-bold">선거구</p>
+                        </div>
+                        <div class="col-9">
+                            <p id="modalDistrict"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./assets/js/loadImages.js" defer></script>
+    <script type="module" src="./assets/js/script.js" defer></script>
+</body>
+</html>
